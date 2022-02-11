@@ -3,5 +3,133 @@ bg-color-primary #2196F3 - голубой цвет фона
 bg-color-secondary #F5F4FA  - серый цвет фона
 text-color-primary #757575  - основной цвет фона
 text-color-secondary #212121 - название кнопок и заголовков
-
+text-color-activ #2196F3 - активный текст
  */
+
+/* Стили ко всему документу */
+:root {
+  --bg-color-primary: #2196f3;
+  --bg-color-secondary: #f5f4fa;
+  --text-color-btn-primary: #fff;
+  --text-color-btn-secondary: #212121;
+  --text-color-primary: #757575;
+  --text-color-secondary: #212121;
+  --text-color-active: #2196f3;
+}
+
+body {
+  background-color: #fff;
+  color: var(--text-color-primary);
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color-primary);
+}
+
+li {
+  list-style-type: none; /* Убираем маркеры */
+}
+
+h2 {
+  color: var(--text-color-secondary);
+}
+
+h3 {
+  color: var(--text-color-secondary);
+}
+
+/* Стили для логотипа */
+.logo {
+  color: var(--text-color-secondary);
+}
+.logo span {
+  color: var(--text-color-active);
+}
+
+/* Стили nav */
+.site-nav .link {
+  color: var(--text-color-secondary);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--text-color-active);
+}
+.site-nav .link.active {
+  color: var(--text-color-active);
+}
+
+/* Contact */
+.site-contact .mail:hover,
+.site-contact .mail:focus,
+.site-contact .phone:hover,
+.site-contact .phone:focus {
+  color: var(--text-color-active);
+}
+
+/* Button */
+.btn {
+  font-size: 16px;
+}
+.btn.primary {
+  background-color: var(--bg-color-primary);
+  color: var(--text-color-btn-primary);
+}
+.btn.secondary {
+  background-color: var(--bg-color-secondary);
+  color: var(--text-color-btn-secondary);
+}
+
+/* .btn.secondary:focus,
+.btn.secondary:hover {
+  background-color: var(--bg-color-primary);
+  color: var(--text-color-btn-primary);
+} */
+
+/* Section baner */
+.site-ban {
+  background-color: #2f303a;
+}
+.site-ban h1 {
+  color: #fff;
+}
+
+/* Section about us */
+.site-about h2 {
+  visibility: hidden;
+}
+
+/* Section work */
+
+/* Section our comand */
+.site-command span {
+  color: var(--text-color-secondary);
+}
+
+/* Section allwork */
+.site-allwork h1 {
+  visibility: hidden;
+}
+
+.site-project span {
+  color: var(--text-color-secondary);
+}
+
+/* footer */
+.site-footer {
+  background-color: #2f303a;
+}
+.footer-logo {
+  color: #ffffff;
+}
+
+.footer-logo span {
+  color: var(--text-color-active);
+}
+.footer-contact .adress {
+  color: #ffffff;
+}
+.footer-contact a {
+  color: rgb(255, 255, 255, 0.6);
+}
