@@ -20,11 +20,13 @@ text-color-activ #2196F3 - активный текст
 body {
   background-color: #fff;
   color: var(--text-color-primary);
-  text-decoration: none;
+
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  font-style: normal;
 }
 
 a {
-  text-decoration: none;
   color: var(--text-color-primary);
 }
 
@@ -32,17 +34,49 @@ li {
   list-style-type: none; /* Убираем маркеры */
 }
 
+h1 {
+  color: #ffffff;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
 h2 {
   color: var(--text-color-secondary);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
 
 h3 {
   color: var(--text-color-secondary);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+h4 {
+  color: var(--text-color-secondary);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 
 /* Стили для логотипа */
 .logo {
   color: var(--text-color-secondary);
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
 }
 .logo span {
   color: var(--text-color-active);
@@ -51,6 +85,11 @@ h3 {
 /* Стили nav */
 .site-nav .link {
   color: var(--text-color-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -61,6 +100,15 @@ h3 {
 }
 
 /* Contact */
+.site-contact .mail,
+.site-contact .phone {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
 .site-contact .mail:hover,
 .site-contact .mail:focus,
 .site-contact .phone:hover,
@@ -70,7 +118,11 @@ h3 {
 
 /* Button */
 .btn {
+  font-weight: 500;
   font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  font-family: inherit;
 }
 .btn.primary {
   background-color: var(--bg-color-primary);
@@ -79,6 +131,11 @@ h3 {
 .btn.secondary {
   background-color: var(--bg-color-secondary);
   color: var(--text-color-btn-secondary);
+}
+.btn.secondary:hover,
+.btn.secondary:focus {
+  background-color: var(--bg-color-primary);
+  color: var(--text-color-btn-primary);
 }
 
 /* .btn.secondary:focus,
@@ -95,16 +152,33 @@ h3 {
   color: #fff;
 }
 
+.site-ban .btn {
+  font-weight: 700;
+}
+
 /* Section about us */
 .site-about h2 {
   visibility: hidden;
 }
 
+.site-about p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
 /* Section work */
 
 /* Section our comand */
+.site-command {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
 .site-command span {
   color: var(--text-color-secondary);
+  font-weight: 500;
 }
 
 /* Section allwork */
@@ -112,8 +186,15 @@ h3 {
   visibility: hidden;
 }
 
-.site-project span {
-  color: var(--text-color-secondary);
+.site-project a {
+  text-decoration: none;
+}
+
+.site-project p {
+  color: var(--text-color-primary);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
 }
 
 /* footer */
@@ -122,6 +203,10 @@ h3 {
 }
 .footer-logo {
   color: #ffffff;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
 }
 
 .footer-logo span {
@@ -132,4 +217,9 @@ h3 {
 }
 .footer-contact a {
   color: rgb(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
 }
