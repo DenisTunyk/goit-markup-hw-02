@@ -26,49 +26,6 @@ body {
   font-style: normal;
 }
 
-a {
-  color: var(--text-color-primary);
-}
-
-li {
-  list-style-type: none; /* Убираем маркеры */
-}
-
-h1 {
-  color: #ffffff;
-
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-h2 {
-  color: var(--text-color-secondary);
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-}
-
-h3 {
-  color: var(--text-color-secondary);
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
-
-h4 {
-  color: var(--text-color-secondary);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
 /* Стили для логотипа */
 .logo {
   color: var(--text-color-secondary);
@@ -91,6 +48,9 @@ h4 {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.site-nav li {
+  list-style-type: none; /* Убираем маркеры */
+}
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--text-color-active);
@@ -107,6 +67,10 @@ h4 {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--text-color-primary);
+}
+.site-contact li {
+  list-style-type: none; /* Убираем маркеры */
 }
 
 .site-contact .mail:hover,
@@ -123,6 +87,7 @@ h4 {
   line-height: 1.63;
   text-align: center;
   font-family: inherit;
+  cursor: pointer;
 }
 .btn.primary {
   background-color: var(--bg-color-primary);
@@ -138,18 +103,19 @@ h4 {
   color: var(--text-color-btn-primary);
 }
 
-/* .btn.secondary:focus,
-.btn.secondary:hover {
-  background-color: var(--bg-color-primary);
-  color: var(--text-color-btn-primary);
-} */
-
 /* Section baner */
 .site-ban {
   background-color: #2f303a;
 }
 .site-ban h1 {
-  color: #fff;
+  color: #ffffff;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .site-ban .btn {
@@ -158,20 +124,31 @@ h4 {
 
 /* Section about us */
 .site-about h2 {
+  color: var(--text-color-secondary);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
   visibility: hidden;
+}
+.site-about h3 {
+  color: var(--text-color-secondary);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
 
 .site-about p {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 }
-
-/* Section work */
+.site-about li {
+  list-style-type: none;
+}
 
 /* Section our comand */
 .site-command {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -180,19 +157,59 @@ h4 {
   color: var(--text-color-secondary);
   font-weight: 500;
 }
-
-/* Section allwork */
-.site-allwork h1 {
-  visibility: hidden;
+.site-command li {
+  list-style-type: none;
+}
+.site-command h2 {
+  color: var(--text-color-secondary);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
 
+/* Section work */
+.site-work li {
+  list-style-type: none;
+}
+.site-work h2 {
+  color: var(--text-color-secondary);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/* Section allwork on PORTFOLIO*/
+.site-allwork h1 {
+  color: #ffffff;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.site-allwork li {
+  list-style-type: none;
+}
+
+/* Section project on PORTFOLIO */
 .site-project a {
   text-decoration: none;
+}
+.site-project h4 {
+  color: var(--text-color-secondary);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 
 .site-project p {
   color: var(--text-color-primary);
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
 }
@@ -200,6 +217,9 @@ h4 {
 /* footer */
 .site-footer {
   background-color: #2f303a;
+}
+.site-footer li {
+  list-style-type: none;
 }
 .footer-logo {
   color: #ffffff;
