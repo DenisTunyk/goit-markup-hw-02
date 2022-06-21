@@ -8,17 +8,19 @@ text-color-activ #2196F3 - активный текст
 
 /* Стили ко всему документу */
 :root {
+  --bg-all-documents: #ffffff;
   --bg-color-primary: #2196f3;
   --bg-color-secondary: #f5f4fa;
-  --text-color-btn-primary: #fff;
+  --text-color-btn-primary: #ffffff;
   --text-color-btn-secondary: #212121;
   --text-color-primary: #757575;
   --text-color-secondary: #212121;
   --text-color-active: #2196f3;
+  
 }
 
 body {
-  background-color: #fff;
+  background-color: var(--bg-all-documents);
   color: var(--text-color-primary);
 
   font-family: "Roboto", sans-serif;
@@ -125,7 +127,7 @@ body {
 /* Section about us */
 .site-about h2 {
   color: var(--text-color-secondary);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -133,7 +135,7 @@ body {
 }
 .site-about h3 {
   color: var(--text-color-secondary);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -162,7 +164,7 @@ body {
 }
 .site-command h2 {
   color: var(--text-color-secondary);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -174,7 +176,7 @@ body {
 }
 .site-work h2 {
   color: var(--text-color-secondary);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -223,7 +225,7 @@ body {
 }
 .footer-logo {
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
@@ -244,32 +246,8 @@ body {
   line-height: 1.71;
 }
 
+.footer-contact a:hover, .footer-contact a:focus{
+  color: #ffffff;
+}
 
-/*
 
---- "Всякий может выложиться на последнем спринте. Но если в 
-тебе достаточно мужества, будешь выкладываться на каждом".
-    |-стойкость духа
-    |-внутренняя стойкость
-    |-умение "загораться" в игре
-
---- Все, что он делает, он делает с полной отдачей (о Майкле). Он всегда выходит на старт
-    (на работу, на помощь), при любых условиях (о Майкле).
-    |-80% успеха - это просто прийти
-    |-всегда выходим на старт при любых условия
-     
---- Клоузер всегда там, где он нужен; он всегда поддерживает товарищей по команде, он не пропускает
-    крупных гонок и интересных событий.
-    |- быть там где нужно
-
---- Клоузер считал, что дело должно быть сделано, и сделано хорошо, а время, место и то, что люди
-    считают возможными или подходящими условиями, - вторично.
-    |- отношение к труду, быть включенным в процесс, приходить и действовать
-    |- делать с полной отдачей
-
---- Чемпионы не расчитывают на идеальные условия. Они берут себя в руки и выходят на старт при любых условиях.
-    |- быть готовым действовать
-    |- каждый день "выходить на бой"
-
---- Желание быть на кого-то похожим - неотъемлемая часть ультрамышления. 
-    Выбирать себе ключевые фигуры и стремиться перенять их какие-то черты.
