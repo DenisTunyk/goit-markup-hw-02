@@ -16,43 +16,70 @@ text-color-activ #2196F3 - активный текст
   --text-color-primary: #757575;
   --text-color-secondary: #212121;
   --text-color-active: #2196f3;
+  --black-color: #212121;
+  --white-color: #ffffff;
   
 }
 
-body {
-  background-color: var(--bg-all-documents);
+/* Загальні стилі для всього документа */
+body{
   color: var(--text-color-primary);
-
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
-  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.list{
+  list-style-type: none;
+}
+.link{
+  text-decoration: none;
+  color: currentColor;
+}
+.section-title{
+  color: var(--text-color-secondary);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
 
-/* Стили для логотипа */
-.logo {
+.section-subtitle{
   color: var(--text-color-secondary);
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/* END Загальні стилі для всього документа */
+
+/* Стилі для логотипа */
+.logo{
+  color: var(--text-color-active);
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
 }
-.logo span {
-  color: var(--text-color-active);
+.logo-black{
+  color: var(--black-color);
 }
+/* END Стилі для логотипа*/
 
-/* Стили nav */
-.site-nav .link {
-  color: var(--text-color-secondary);
-  text-decoration: none;
+
+
+/* Стилі nav */
+.header{
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.site-nav li {
-  list-style-type: none; /* Убираем маркеры */
+
+.site-nav .link{
+  color: var(--text-color-secondary);
 }
+
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--text-color-active);
@@ -60,149 +87,89 @@ body {
 .site-nav .link.active {
   color: var(--text-color-active);
 }
-
-/* Contact */
-.site-contact .mail,
-.site-contact .phone {
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--text-color-primary);
-}
-.site-contact li {
-  list-style-type: none; /* Убираем маркеры */
-}
-
-.site-contact .mail:hover,
-.site-contact .mail:focus,
-.site-contact .phone:hover,
-.site-contact .phone:focus {
+.site-contact .link:hover,
+.site-contact .link:focus {
   color: var(--text-color-active);
 }
+/* END Стилі nav  */
 
+/* Section baner */
+.banner{
+  background-color: #2f303a;
+}
+.banner .title {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.banner .btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  font-family: inherit;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+  background-color: var(--bg-color-primary);
+  color: var(--text-color-btn-primary);
+}
+/* END section baner */
+
+/* Section our comand */
+.site-command {
+  text-align: center;
+}
+.site-command .comand-name{
+  color: var(--text-color-btn-secondary);
+  font-weight: 500;
+  line-height: 1.18;
+  font-size: 16px;
+}
+
+.site-command .text{
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+
+/* =====================PORTFOLIO====================== */
 /* Button */
-.btn {
+.filter-button-prm {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
   font-family: inherit;
   cursor: pointer;
-}
-.btn.primary {
   background-color: var(--bg-color-primary);
   color: var(--text-color-btn-primary);
 }
-.btn.secondary {
+
+.filter-button-sec{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  font-family: inherit;
+  cursor: pointer;
   background-color: var(--bg-color-secondary);
   color: var(--text-color-btn-secondary);
 }
-.btn.secondary:hover,
-.btn.secondary:focus {
+
+.filter-button-sec:hover,
+.filter-button-sec:focus {
   background-color: var(--bg-color-primary);
   color: var(--text-color-btn-primary);
 }
 
-/* Section baner */
-.site-ban {
-  background-color: #2f303a;
-}
-.site-ban h1 {
-  color: #ffffff;
-
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.site-ban .btn {
-  font-weight: 700;
-}
-
-/* Section about us */
-.site-about h2 {
-  color: var(--text-color-secondary);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  visibility: hidden;
-}
-.site-about h3 {
-  color: var(--text-color-secondary);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
-
-.site-about p {
-  font-size: 14px;
-  line-height: 1.71;
-}
-.site-about li {
-  list-style-type: none;
-}
-
-/* Section our comand */
-.site-command {
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-}
-.site-command h3 {
-  color: var(--text-color-secondary);
-  font-weight: 500;
-}
-.site-command li {
-  list-style-type: none;
-}
-.site-command h2 {
-  color: var(--text-color-secondary);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-}
-
-/* Section work */
-.site-work li {
-  list-style-type: none;
-}
-.site-work h2 {
-  color: var(--text-color-secondary);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-}
-
-/* Section allwork on PORTFOLIO*/
-.site-allwork h1 {
-  color: #ffffff;
-
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.site-allwork li {
-  list-style-type: none;
-}
-
 /* Section project on PORTFOLIO */
-.site-project a {
-  text-decoration: none;
-}
-.site-project h4 {
+
+.site-project-title {
   color: var(--text-color-secondary);
   font-weight: 700;
   font-size: 18px;
@@ -210,8 +177,7 @@ body {
   letter-spacing: 0.06em;
 }
 
-.site-project p {
-  color: var(--text-color-primary);
+.site-project-text {
   font-size: 16px;
   line-height: 1.88;
 }
@@ -220,33 +186,21 @@ body {
 .site-footer {
   background-color: #2f303a;
 }
-.site-footer li {
-  list-style-type: none;
-}
-.footer-logo {
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
+
+.logo-white {
+  color: var(--white-color);
 }
 
-.footer-logo span {
-  color: var(--text-color-active);
+.footer-contact{
+  font-style: inherit;
 }
-.footer-contact .adress {
-  color: #ffffff;
-}
-.footer-contact a {
+
+.footer-contact-link {
   color: rgb(255, 255, 255, 0.6);
-  text-decoration: none;
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
 }
 
-.footer-contact a:hover, .footer-contact a:focus{
+.footer-contact-link:hover, .footer-contact-link:focus{
   color: #ffffff;
 }
 
